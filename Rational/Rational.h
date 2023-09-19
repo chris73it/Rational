@@ -2,7 +2,6 @@
 #include <cstdint>
 #include <iostream>
 #include <array>
-#include <map>
 
 class Rational final
 {
@@ -15,10 +14,10 @@ public:
 		73,  79,  83,  89,  97, 101, 103, 107, 109, 113, 127
 	};
 public:
-	Rational(uint32_t _numerator, uint32_t _denominator);
+	Rational(uint32_t _numerator = 0, uint32_t _denominator = 1);
 	Rational(uint32_t _numerator);
 	Rational();
-	Rational(const Rational& other);
+	//Rational(const Rational& other);
 	Rational operator = (const Rational& other);
 	~Rational() = default;
 public:
